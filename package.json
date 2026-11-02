@@ -1,0 +1,14 @@
+{
+  "name": "student-scheme-discovery-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student Scheme Discovery and Document Expiry Reminder Platform",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "npm --prefix client run dev",
+    "start": "npm --prefix server start"
+  }
+}

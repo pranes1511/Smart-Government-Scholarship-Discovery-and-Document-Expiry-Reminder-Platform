@@ -1,0 +1,624 @@
+[
+  {
+    "name": "PM-USP Central Sector Scholarship Scheme for College and University Students",
+    "slug": "pm-usp-central-sector-scholarship-college-university",
+    "category": "Merit-based",
+    "description": "Financial assistance to meritorious students from low-income families pursuing regular college and university degrees.",
+    "detailedDescription": "The PM-USP CSSS is awarded to students who are above the 80th percentile of successful candidates in the relevant stream from the respective Board of Examination in Class 12, pursuing a regular degree course recognized by AICTE, UGC, or MCI.",
+    "ministry": "Department of Higher Education, Ministry of Education, Government of India",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Postgraduate"],
+    "eligibleCourses": ["All Regular Degree Courses (BA, BSc, BCom, BE, BTech, MBBS, MA, MSc, MCom, ME)"],
+    "eligibilityRules": [
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 450000,
+        "label": "Annual Family Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Gross family annual income must not exceed ₹4,50,000.",
+        "nextStepTip": "Check if an updated income certificate can be obtained from your Revenue authority."
+      },
+      {
+        "field": "academicPercentage",
+        "operator": "gte",
+        "value": 80,
+        "label": "Minimum Class 12 / Degree Percentage",
+        "mandatory": true,
+        "explanationOnFail": "Student must have scored at least 80% (or above 80th percentile) in previous qualifying examination.",
+        "nextStepTip": "Explore community or state-specific scholarships with flexible academic score cutoffs."
+      },
+      {
+        "field": "scholarshipReceiving",
+        "operator": "boolean_eq",
+        "value": false,
+        "label": "Not Receiving Other Government Scholarship",
+        "mandatory": true,
+        "explanationOnFail": "Candidates holding any other central or state government scholarship are not eligible for dual benefit.",
+        "nextStepTip": "Verify your current scholarship status or choose the scholarship offering optimal financial support."
+      }
+    ],
+    "benefits": [
+      "₹12,000 per annum at Undergraduate level for first 3 years of study",
+      "₹20,000 per annum at Postgraduate level / 4th & 5th years for professional integrated courses",
+      "Direct Benefit Transfer (DBT) into student's Aadhaar-seeded bank account"
+    ],
+    "requiredDocuments": [
+      "Class 12 Marksheet",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "College Admission Proof",
+      "Bank Account Passbook Copy"
+    ],
+    "applicationStartDate": "2026-07-01",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-30",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "AICTE Pragati Scholarship Scheme for Girl Students (Degree)",
+    "slug": "aicte-pragati-scholarship-girls-degree",
+    "category": "Girls & Women Education",
+    "description": "Scheme aimed at providing assistance for advancement of girls pursuing technical degree education.",
+    "detailedDescription": "Pragati is an AICTE scheme to provide empowerment to young women by encouraging them to pursue higher technical education. Up to two girl children per family are eligible.",
+    "ministry": "All India Council for Technical Education (AICTE), Ministry of Education",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate"],
+    "eligibleCourses": ["B.E.", "B.Tech", "B.Arch", "B.Pharm", "Technical Undergraduate Degrees"],
+    "eligibilityRules": [
+      {
+        "field": "gender",
+        "operator": "eq",
+        "value": "Female",
+        "label": "Gender Requirement (Female Only)",
+        "mandatory": true,
+        "explanationOnFail": "This scholarship is exclusively open to female students.",
+        "nextStepTip": "Check AICTE Swanath or PM-USP scholarships open to all genders."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 800000,
+        "label": "Annual Family Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Family income from all sources must not exceed ₹8,00,000 per annum.",
+        "nextStepTip": "Obtain an authorized revenue tehsildar income certificate."
+      },
+      {
+        "field": "degreeType",
+        "operator": "eq",
+        "value": "Undergraduate",
+        "label": "Degree Type Requirement",
+        "mandatory": true,
+        "explanationOnFail": "Applicant must be admitted to 1st year of technical degree or 2nd year through lateral entry.",
+        "nextStepTip": "For diploma students, apply to the AICTE Pragati Diploma scheme."
+      }
+    ],
+    "benefits": [
+      "₹50,000 per annum for every year of study towards college fee payment, computer, books and stationery purchase",
+      "Total benefit up to ₹2,00,000 for standard 4-year degree course"
+    ],
+    "requiredDocuments": [
+      "Class 10 and 12 Marksheet",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "College Admission Allotment Letter",
+      "Tuition Fee Receipt"
+    ],
+    "applicationStartDate": "2026-08-15",
+    "applicationDeadline": "2026-11-30",
+    "applicationStatus": "Open",
+    "officialUrl": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati",
+    "lastVerified": "2026-10-28",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "AICTE Saksham Scholarship Scheme for Specially Abled Students (Degree)",
+    "slug": "aicte-saksham-scholarship-pwd-degree",
+    "category": "Disability Support",
+    "description": "Financial assistance for specially-abled students pursuing approved technical degree programmes.",
+    "detailedDescription": "Saksham is an initiative by AICTE to support specially abled students having not less than 40% disability who are admitted to first year of degree level course in AICTE approved technical institutions.",
+    "ministry": "All India Council for Technical Education (AICTE)",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate"],
+    "eligibleCourses": ["B.E.", "B.Tech", "B.Arch", "B.Pharm", "MCA Integrated"],
+    "eligibilityRules": [
+      {
+        "field": "additionalEligibilityInformation.isPersonWithDisability",
+        "operator": "boolean_eq",
+        "value": true,
+        "label": "Person with Disability (PwD) Status",
+        "mandatory": true,
+        "explanationOnFail": "Applicant must have a recognized benchmark disability (minimum 40%).",
+        "nextStepTip": "Update your disability status and attach a certified disability certificate."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 800000,
+        "label": "Annual Family Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Total family annual income must not exceed ₹8,00,000.",
+        "nextStepTip": "Ensure you have a valid income certificate issued by a competent authority."
+      }
+    ],
+    "benefits": [
+      "₹50,000 per annum towards tuition fee and study equipment expenses",
+      "Renewable every year subject to passing examination"
+    ],
+    "requiredDocuments": [
+      "Disability Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Previous Academic Marksheet",
+      "College Admission Allotment Letter"
+    ],
+    "applicationStartDate": "2026-08-15",
+    "applicationDeadline": "2026-12-15",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-25",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "AICTE Swanath Scholarship Scheme",
+    "slug": "aicte-swanath-scholarship-scheme",
+    "category": "Higher Education Assistance",
+    "description": "Financial aid for orphan students, wards of parents lost to COVID-19, or wards of Armed Forces martyrs pursuing college technical studies.",
+    "detailedDescription": "AICTE Swanath Scheme supports eligible children who are orphans, either/both parents died due to Covid-19, or wards of Armed Forces and Central Paramilitary Forces martyred in action.",
+    "ministry": "All India Council for Technical Education (AICTE)",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Diploma"],
+    "eligibleCourses": ["All AICTE Approved Technical Courses"],
+    "eligibilityRules": [
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 800000,
+        "label": "Annual Family Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Family income ceiling is ₹8,00,000 per annum.",
+        "nextStepTip": "Submit income certificate or death certificate of primary breadwinner."
+      }
+    ],
+    "benefits": [
+      "₹50,000 per annum lump sum assistance for every year of technical study"
+    ],
+    "requiredDocuments": [
+      "Bonafide Certificate",
+      "Income Certificate",
+      "Death Certificate of Parent(s) or Armed Forces Martyr Proof",
+      "Previous Academic Marksheet",
+      "College Admission Proof"
+    ],
+    "applicationStartDate": "2026-09-01",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-28",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Post-Matric Scholarship for Scheduled Caste (SC) Students",
+    "slug": "post-matric-scholarship-sc-students",
+    "category": "Community-based",
+    "description": "Centrally sponsored scholarship to provide financial support to SC students pursuing higher studies beyond Class 10.",
+    "detailedDescription": "A flagship scheme of the Ministry of Social Justice and Empowerment covering compulsory non-refundable fees and maintenance allowance for post-matric and college degree courses.",
+    "ministry": "Ministry of Social Justice and Empowerment, Government of India",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Postgraduate", "Diploma", "Doctorate"],
+    "eligibleCourses": ["All Recognized College and University Degree / Diploma Courses"],
+    "eligibilityRules": [
+      {
+        "field": "category",
+        "operator": "eq",
+        "value": "SC",
+        "label": "Social Category (Scheduled Caste)",
+        "mandatory": true,
+        "explanationOnFail": "Scheme is designated for students belonging to the Scheduled Caste (SC) community.",
+        "nextStepTip": "Select Post-Matric schemes applicable for ST, OBC, or Minority students."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual Family Income Ceiling",
+        "mandatory": true,
+        "explanationOnFail": "Annual family income from all sources must not exceed ₹2,50,000.",
+        "nextStepTip": "Check with your state welfare department for current ceiling circulars."
+      }
+    ],
+    "benefits": [
+      "Full reimbursement of compulsory non-refundable college tuition and exam fees",
+      "Monthly maintenance allowance up to ₹1,200/month for hostellers and ₹550/month for day scholars",
+      "Study tour and thesis preparation charges for postgraduate research"
+    ],
+    "requiredDocuments": [
+      "Community Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Previous Academic Marksheet",
+      "Fee Structure Breakdown"
+    ],
+    "applicationStartDate": "2026-07-15",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-26",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Post-Matric Scholarship for Other Backward Classes (OBC) Students",
+    "slug": "post-matric-scholarship-obc-students",
+    "category": "Community-based",
+    "description": "Financial assistance to eligible OBC college students to pursue post-secondary and higher education.",
+    "detailedDescription": "Designed to provide financial support to OBC candidates enrolled in recognized colleges, universities, and polytechnics to reduce drop-out rates at undergraduate and postgraduate levels.",
+    "ministry": "Ministry of Social Justice and Empowerment, Government of India",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Postgraduate", "Diploma"],
+    "eligibleCourses": ["All Recognized Undergraduate and Postgraduate Degrees"],
+    "eligibilityRules": [
+      {
+        "field": "category",
+        "operator": "in",
+        "value": ["OBC", "BC", "MBC"],
+        "label": "Social Category (OBC / BC / MBC)",
+        "mandatory": true,
+        "explanationOnFail": "Applicant must belong to an eligible OBC, BC, or MBC community.",
+        "nextStepTip": "Check community classification in your state OBC list."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual Family Income Ceiling",
+        "mandatory": true,
+        "explanationOnFail": "Annual family income must not exceed ₹2,50,000.",
+        "nextStepTip": "Ensure you have an active revenue income certificate."
+      }
+    ],
+    "benefits": [
+      "Reimbursement of tuition and academic fees as per state government norms",
+      "Monthly maintenance allowance ranging from ₹400 to ₹1,000 per month depending on degree course"
+    ],
+    "requiredDocuments": [
+      "Community Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Previous Academic Marksheet"
+    ],
+    "applicationStartDate": "2026-08-01",
+    "applicationDeadline": "2026-12-15",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-25",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Ishan Uday Special Scholarship Scheme for North Eastern Region (NER)",
+    "slug": "ishan-uday-special-scholarship-ner",
+    "category": "Higher Education Assistance",
+    "description": "UGC special scholarship scheme to enhance higher education gross enrolment ratio in North Eastern states.",
+    "detailedDescription": "Administered by University Grants Commission (UGC) for students having domicile of North Eastern Region (NER) who have passed Class 12 or equivalent and secured admission in general or professional undergraduate degrees.",
+    "ministry": "University Grants Commission (UGC) / Ministry of Education",
+    "applicableStates": [
+      "Assam",
+      "Arunachal Pradesh",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim",
+      "Tripura"
+    ],
+    "educationLevels": ["Undergraduate"],
+    "eligibleCourses": ["BA", "BSc", "BCom", "BE", "BTech", "MBBS", "BDS", "All General & Professional Degrees"],
+    "eligibilityRules": [
+      {
+        "field": "state",
+        "operator": "in",
+        "value": [
+          "Assam",
+          "Arunachal Pradesh",
+          "Manipur",
+          "Meghalaya",
+          "Mizoram",
+          "Nagaland",
+          "Sikkim",
+          "Tripura"
+        ],
+        "label": "North Eastern State Domicile",
+        "mandatory": true,
+        "explanationOnFail": "Applicant must possess domicile of one of the 8 North Eastern states.",
+        "nextStepTip": "Explore central sector schemes open to all Indian states."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 450000,
+        "label": "Annual Family Income Ceiling",
+        "mandatory": true,
+        "explanationOnFail": "Annual family income ceiling is ₹4,50,000.",
+        "nextStepTip": "Obtain an official revenue officer certified income statement."
+      }
+    ],
+    "benefits": [
+      "₹5,400 per month for general degree courses (₹54,000/year)",
+      "₹7,800 per month for technical, medical, and professional degree courses (₹78,000/year)",
+      "Credited directly via DBT on quarterly basis"
+    ],
+    "requiredDocuments": [
+      "Nativity Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Class 12 Marksheet",
+      "College Admission Proof"
+    ],
+    "applicationStartDate": "2026-08-01",
+    "applicationDeadline": "2026-11-30",
+    "applicationStatus": "Open",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-24",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme (Puthumai Penn)",
+    "slug": "tn-puthumai-penn-higher-education-scheme",
+    "category": "State Government Welfare",
+    "description": "Tamil Nadu government monthly financial assistance for girl students who studied Classes 6 to 12 in government schools and enrolled in college.",
+    "detailedDescription": "Flagship higher education welfare scheme launched by the Government of Tamil Nadu providing ₹1,000 per month directly to girl students pursuing undergraduate degrees, polytechnic diplomas, or ITI programs.",
+    "ministry": "Social Welfare and Women Empowerment Department, Government of Tamil Nadu",
+    "applicableStates": ["Tamil Nadu"],
+    "educationLevels": ["Undergraduate", "Diploma"],
+    "eligibleCourses": ["All Higher Education Courses (B.A., B.Sc., B.Com., B.E., B.Tech, MBBS, Polytechnic, ITI)"],
+    "eligibilityRules": [
+      {
+        "field": "state",
+        "operator": "eq",
+        "value": "Tamil Nadu",
+        "label": "Tamil Nadu Domicile",
+        "mandatory": true,
+        "explanationOnFail": "Exclusively applicable to students residing and studying in Tamil Nadu.",
+        "nextStepTip": "Explore national girl child scholarships like AICTE Pragati."
+      },
+      {
+        "field": "gender",
+        "operator": "eq",
+        "value": "Female",
+        "label": "Gender (Female Only)",
+        "mandatory": true,
+        "explanationOnFail": "This scheme is designated for female college students.",
+        "nextStepTip": "Male students can explore the TN Naan Mudhalvan or Post-Matric schemes."
+      },
+      {
+        "field": "additionalEligibilityInformation.isGovernmentSchoolStudent",
+        "operator": "boolean_eq",
+        "value": true,
+        "label": "Studied Classes 6 to 12 in Tamil Nadu Government School",
+        "mandatory": true,
+        "explanationOnFail": "Student must have completed Classes 6 through 12 in Government schools of Tamil Nadu.",
+        "nextStepTip": "Submit school bonafide / headmaster verification certificate."
+      }
+    ],
+    "benefits": [
+      "₹1,000 every month (₹12,000 annually) transferred directly to the student's personal bank account",
+      "Available throughout the tenure of the undergraduate or diploma degree course"
+    ],
+    "requiredDocuments": [
+      "Bonafide Certificate",
+      "Class 10 and 12 Marksheet",
+      "Nativity Certificate",
+      "School Transfer Certificate (Class 6-12 Govt School Proof)",
+      "Bank Account Passbook Copy"
+    ],
+    "applicationStartDate": "2026-07-01",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Always Open",
+    "officialUrl": "https://www.penkalvi.tn.gov.in/",
+    "lastVerified": "2026-10-31",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Tamil Nadu 7.5% Government School Quota Professional College Fee Exemption",
+    "slug": "tn-7-5-percent-quota-fee-exemption",
+    "category": "State Government Welfare",
+    "description": "Full tuition fee and hostel fee exemption for Tamil Nadu government school students admitted to professional college courses under 7.5% preferential quota.",
+    "detailedDescription": "Under the Tamil Nadu preferential allotment policy, students admitted to engineering (Anna University counselling), medical (NEET state counselling), veterinary, or agriculture under 7.5% government school quota receive 100% free education funded by TN government.",
+    "ministry": "Higher Education & Health and Family Welfare Departments, Government of Tamil Nadu",
+    "applicableStates": ["Tamil Nadu"],
+    "educationLevels": ["Undergraduate"],
+    "eligibleCourses": ["B.E.", "B.Tech", "MBBS", "BDS", "BVSc", "B.Sc Agriculture"],
+    "eligibilityRules": [
+      {
+        "field": "state",
+        "operator": "eq",
+        "value": "Tamil Nadu",
+        "label": "Tamil Nadu Domicile",
+        "mandatory": true,
+        "explanationOnFail": "Student must be a resident of Tamil Nadu.",
+        "nextStepTip": "Check other state or central quota fee waivers."
+      },
+      {
+        "field": "additionalEligibilityInformation.isGovernmentSchoolStudent",
+        "operator": "boolean_eq",
+        "value": true,
+        "label": "Govt School 7.5% Preferential Quota Allottee",
+        "mandatory": true,
+        "explanationOnFail": "Applicable only to candidates admitted under the 7.5% government school preferential reservation.",
+        "nextStepTip": "Present TNEA / TN Medical Selection Allotment Order showing 7.5% quota."
+      }
+    ],
+    "benefits": [
+      "100% complete waiver of college tuition fee, development fee, and examination fee",
+      "Full reimbursement of hostel accommodation and mess charges by the Government of Tamil Nadu"
+    ],
+    "requiredDocuments": [
+      "College Admission Allotment Letter",
+      "Bonafide Certificate",
+      "Class 10 and 12 Marksheet",
+      "Nativity Certificate",
+      "Community Certificate"
+    ],
+    "applicationStartDate": "2026-08-01",
+    "applicationDeadline": "2026-11-15",
+    "applicationStatus": "Open",
+    "officialUrl": "https://www.tneaonline.org/",
+    "lastVerified": "2026-10-29",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Tamil Nadu BC, MBC & DNC Welfare Post-Matric Scholarship",
+    "slug": "tn-bc-mbc-dnc-post-matric-scholarship",
+    "category": "Community-based",
+    "description": "State scholarship for BC, MBC, and DNC students pursuing undergraduate and postgraduate degrees in Tamil Nadu.",
+    "detailedDescription": "Awarded by the Directorate of Backward Classes and Minorities Welfare to eligible Backward Class, Most Backward Class, and Denotified Community students pursuing arts, science, commerce, and engineering college courses.",
+    "ministry": "Backward Classes, Most Backward Classes and Minorities Welfare Department, Government of Tamil Nadu",
+    "applicableStates": ["Tamil Nadu"],
+    "educationLevels": ["Undergraduate", "Postgraduate", "Diploma"],
+    "eligibleCourses": ["All Recognized Arts, Science, Commerce, and Professional Degree Courses"],
+    "eligibilityRules": [
+      {
+        "field": "state",
+        "operator": "eq",
+        "value": "Tamil Nadu",
+        "label": "Tamil Nadu Residence",
+        "mandatory": true,
+        "explanationOnFail": "Applicable strictly to Tamil Nadu students.",
+        "nextStepTip": "Review central OBC schemes on National Scholarship Portal."
+      },
+      {
+        "field": "category",
+        "operator": "in",
+        "value": ["BC", "MBC", "DNC", "OBC"],
+        "label": "Social Category (BC / MBC / DNC)",
+        "mandatory": true,
+        "explanationOnFail": "Student must belong to BC, MBC, or DNC category.",
+        "nextStepTip": "Consult the Tamil Nadu State Welfare Community Roster."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual Family Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Annual family income must not exceed ₹2,50,000.",
+        "nextStepTip": "Obtain an updated e-Sevai revenue income certificate."
+      }
+    ],
+    "benefits": [
+      "Tuition fee reimbursement as fixed by the State Fee Regulatory Committee",
+      "Special maintenance allowance for hostellers and day scholars"
+    ],
+    "requiredDocuments": [
+      "Community Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Nativity Certificate",
+      "Previous Academic Marksheet"
+    ],
+    "applicationStartDate": "2026-08-01",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Open",
+    "officialUrl": "https://bcmbcmw.tn.gov.in/",
+    "lastVerified": "2026-10-27",
+    "verificationStatus": "Verified Active"
+  },
+  {
+    "name": "Merit-cum-Means Scholarship for Professional and Technical Courses CS (Minorities)",
+    "slug": "merit-cum-means-minority-scholarship-cs",
+    "category": "Minority Welfare",
+    "description": "Financial assistance to meritorious and needy students belonging to minority communities pursuing professional/technical college courses.",
+    "detailedDescription": "Centrally sponsored scheme by the Ministry of Minority Affairs for students belonging to Muslims, Christians, Sikhs, Buddhists, Jains, and Parsis enrolled in recognized professional or technical undergraduate or postgraduate degrees.",
+    "ministry": "Ministry of Minority Affairs, Government of India",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Postgraduate"],
+    "eligibleCourses": ["Engineering, Technology, Medical, Dental, Pharmacy, Architecture, Law, Management"],
+    "eligibilityRules": [
+      {
+        "field": "category",
+        "operator": "in",
+        "value": ["Minority", "Muslim", "Christian", "Sikh", "Buddhist", "Jain", "Parsi"],
+        "label": "Minority Community Classification",
+        "mandatory": true,
+        "explanationOnFail": "Applicant must belong to a notified religious minority community.",
+        "nextStepTip": "Check general or state merit-cum-means schemes if not in minority roster."
+      },
+      {
+        "field": "academicPercentage",
+        "operator": "gte",
+        "value": 50,
+        "label": "Minimum Previous Marks (50%)",
+        "mandatory": true,
+        "explanationOnFail": "Student must have secured minimum 50% marks in the previous final examination.",
+        "nextStepTip": "Work on improving semester marks to meet the threshold for renewal."
+      },
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 250000,
+        "label": "Annual Family Income Ceiling",
+        "mandatory": true,
+        "explanationOnFail": "Annual family income must not exceed ₹2,50,000.",
+        "nextStepTip": "Attach official income certificate from competent revenue authority."
+      }
+    ],
+    "benefits": [
+      "Course fee reimbursement up to ₹20,000 per annum (or actual course fee whichever is lower)",
+      "Maintenance allowance of ₹1,000 per month for hostellers (₹10,000/year) and ₹500/month for day scholars"
+    ],
+    "requiredDocuments": [
+      "Community Certificate",
+      "Income Certificate",
+      "Bonafide Certificate",
+      "Previous Academic Marksheet",
+      "Fee Structure Breakdown"
+    ],
+    "applicationStartDate": "2026-07-20",
+    "applicationDeadline": "2026-11-30",
+    "applicationStatus": "Needs Official Verification",
+    "officialUrl": "https://scholarships.gov.in/",
+    "lastVerified": "2026-10-25",
+    "verificationStatus": "Needs Official Verification"
+  },
+  {
+    "name": "Central Sector Interest Subsidy Scheme (CSIS) on Education Loans",
+    "slug": "csis-central-sector-interest-subsidy-education-loan",
+    "category": "Income-based",
+    "description": "Full interest subsidy during moratorium period on educational loans taken by economically weaker students for professional college studies in India.",
+    "detailedDescription": "Under the CSIS scheme of the Ministry of Education, students whose gross family annual income is up to ₹4.50 Lakhs who have availed educational loans under the IBA model loan scheme for pursuing professional and technical higher education in India are eligible for 100% interest subsidy during the moratorium period (course period + 1 year).",
+    "ministry": "Department of Higher Education, Ministry of Education, Government of India",
+    "applicableStates": ["All India"],
+    "educationLevels": ["Undergraduate", "Postgraduate"],
+    "eligibleCourses": ["All Recognized Professional and Technical Courses"],
+    "eligibilityRules": [
+      {
+        "field": "annualFamilyIncome",
+        "operator": "lte",
+        "value": 450000,
+        "label": "Economically Weaker Section (EWS) Income Limit",
+        "mandatory": true,
+        "explanationOnFail": "Annual gross family income must be within ₹4,50,000 ceiling.",
+        "nextStepTip": "Obtain an EWS income certificate from your district tehsildar."
+      }
+    ],
+    "benefits": [
+      "100% interest waiver on educational loan during entire period of college study plus one year post-graduation",
+      "Direct settlement of interest component with lending scheduled bank"
+    ],
+    "requiredDocuments": [
+      "Income Certificate",
+      "Bonafide Certificate",
+      "College Admission Proof",
+      "Bank Loan Sanction Letter",
+      "Loan Account Statement"
+    ],
+    "applicationStartDate": "2026-01-01",
+    "applicationDeadline": "2026-12-31",
+    "applicationStatus": "Always Open",
+    "officialUrl": "https://www.vidyalakshmi.co.in/",
+    "lastVerified": "2026-10-20",
+    "verificationStatus": "Verified Active"
+  }
+]
